@@ -13,12 +13,18 @@ Cart.prototype.addItem = function(product, quantity) {
 };
 
 Cart.prototype.saveToLocalStorage = function() {
-  // TODO: Fill in this instance method to save the contents of the cart to localStorage
+  // DONE: Fill in this instance method to save the contents of the cart to localStorage
+  let stringifidedItems = JSON.stringify(this.items);
+  localStorage.getItem('cart', stringifidedItems);
 };
 
-Cart.prototype.removeItem = function(item) {
+Cart.prototype.removeItem = function(item) { // do last-ish
   // TODO: Fill in this instance method to remove one item from the cart.
   // Note: You will have to decide what kind of parameter to pass in here!
+  // event listener
+  // target through ID made with JS when adding Item?
+  //    .setAttribute to create ID
+  // how do you remove something in array if you know the index? maybe slice slice? id, # o things to remove(maybe)
 };
 
 const CartItem = function(product, quantity) {

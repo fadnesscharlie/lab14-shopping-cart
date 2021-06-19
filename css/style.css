@@ -1,1 +1,179 @@
 /* TODO: Make it awesome */
+body {
+  background-color: rgb(228, 235, 228);
+  color: rgb(27, 13, 88);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body > header {
+  width: 80%;
+  height: 180px;
+  margin: auto;
+  margin-top: 25px;
+  border-bottom: 5px solid rgb(27, 13, 88);
+}
+
+body > header > h1 {
+  color: rgb(70, 156, 70);
+  background-color: rgb(27, 13, 88);
+  font-size: 3em;
+  font-weight: bolder;
+  padding: 30px;
+  width: max-content;
+  margin: auto;
+  border-radius: 30px;
+  font-family: 'Sigmar One', cursive;
+}
+
+nav{
+  width: 80%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  display: inline-block;
+  width: max-content;
+  padding: 20px 0px;
+  font-size: 1.5em;
+}
+li a {
+  color: rgb(27, 13, 88);
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+main h1 {
+  width: max-content;
+  margin: auto;
+  padding: 20px 0px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+main ol {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+main li {
+  margin: 0px 25px;
+  padding: 10px;
+  line-height: 1.2em;
+  border-top: 5px solid rgb(27, 13, 88);
+
+}
+
+fieldset {
+  border: 5px solid rgb(27, 13, 88);
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+legend {
+  margin-left: 50px;
+  padding: 0 10px;
+}
+
+label {
+  padding: 25px;
+}
+
+input[type=submit] {
+  margin: 15px;
+  background-color: rgba(27, 13, 88, 0.2);
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+main p {
+  width: max-content;
+  margin-left: 50px;
+  padding: 10px;
+  border-bottom: 2px solid rgb(27, 13, 88);
+}
+
+footer p {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: right;
+}
+
+table {
+  width: 50%;
+  margin: auto;
+}
+
+thead tr {
+  border: 5px solid rgb(27, 13, 88);
+}
+
+th {
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: rgba(70, 156, 70, 0.6);
+}
+
+td {
+  border: 5px solid rgb(27, 13, 88);
+  text-align: center;
+  padding: 10px
+}
+
+td:first-child {
+  font-weight: bolder;
+}
+
+td:first-child:hover {
+  background-color: rgb(157, 95, 95);
+  cursor: pointer;
+}
+
+
+tr:last-child td {
+  border-bottom: 5px solid rgb(27, 13, 88);
+
+}
+
+
+@media screen and (max-width: 650px)  {
+
+  body > header {
+    height: 250px;
+  }
+
+  body > header > h1 {
+    width: min-content;
+    text-align: center;
+  }
+
+  main ol {
+    width: 80%;
+  }
+
+  fieldset {
+    display: block;
+  }
+  label {
+    display: block;
+    width: max-content;
+    margin: auto;
+    padding: 15px;
+    padding-bottom: 0;
+  }
+
+  input[type=submit] {
+    display: block;
+    margin: 15px auto;;
+  }
+ 
+}
